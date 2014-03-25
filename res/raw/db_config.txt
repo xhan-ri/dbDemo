@@ -1,0 +1,52 @@
+#
+# generated on 2014/03/24 09:50:10
+#
+# --table-start--
+dataClass=com.rhapsody.android.demo.db.data.Album
+tableName=album
+# --table-fields-start--
+# --field-start--
+fieldName=id
+id=true
+indexName=album_id_idx
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=year
+# --field-end--
+# --field-start--
+fieldName=tracks
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.rhapsody.android.demo.db.data.Track
+tableName=track
+# --table-fields-start--
+# --field-start--
+fieldName=trackId
+columnName=id
+id=true
+indexName=track_id_idx
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=length
+# --field-end--
+# --field-start--
+fieldName=genreId
+# --field-end--
+# --field-start--
+fieldName=album
+columnName=album_id
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
